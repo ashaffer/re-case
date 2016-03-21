@@ -2,7 +2,7 @@
   "name": "re-case",
   "description": "Change file case in bulk",
   "repository": "git://github.com/ashaffer/re-case.git",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "license": "MIT",
   "main": "lib/index.js",
   "bin": {
