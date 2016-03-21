@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "glob": "^7.0.3",
+    "minimist": "^1.2.0",
     "to-case": "^2.0.0"
   },
   "devDependencies": {

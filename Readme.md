@@ -11,7 +11,7 @@ Change file case in bulk
 
 ## Usage
 
-`recase <pattern> <case>`
+`recase <pattern> <case> -<opts>`
 
 e.g.
 
@@ -39,6 +39,10 @@ Internally this uses [to-case](https://github.com/ianstormtaylor/to-case), so yo
   * `space` - `what the heck`
   * `title` - `What the Heck`
   * `upper` - `WHAT THE HECK`
+
+## Options
+
+The only CLI option you can pass at the moment is `-ext`, which specifies what to use as the extension. This is useful if you have extensions that are not the same as what `.extname()` would normally detect e.g. `.spec.js`, or `.test.js`. Extensions will not be transformed.
 
 ## As a library
 

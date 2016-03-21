@@ -1,6 +1,16 @@
 #!/usr/bin/env node
 
-var recase = require('..')
-var args = process.argv.slice(2)
+/**
+ * Modules
+ */
 
-recase(args.slice(0, -1), args.pop())
+var recase = require('..')
+var minimist = require('minimist')
+
+/**
+ * CLI
+ */
+
+var argv = minimist(process.argv.slice(2))
+
+recase(argv._.slice(0, -1), argv._.pop(), argv)
