@@ -13,4 +13,4 @@ var minimist = require('minimist')
 
 var argv = minimist(process.argv.slice(2))
 
-recase(argv._.slice(0, -1), argv._.pop(), argv)
+recase(argv._, argv)

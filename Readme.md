@@ -11,11 +11,11 @@ Change file case in bulk
 
 ## Usage
 
-`recase <pattern> <case> -<opts>`
+`recase <pattern> --<opts>`
 
 e.g.
 
-`recase components/*.js capital`
+`recase components/*.js --case capital`
 
 Transform all the javascript files in `components/` to capital case:
 
@@ -42,7 +42,8 @@ Internally this uses [to-case](https://github.com/ianstormtaylor/to-case), so yo
 
 ## Options
 
-The only CLI option you can pass at the moment is `-ext`, which specifies what to use as the extension. This is useful if you have extensions that are not the same as what `.extname()` would normally detect e.g. `.spec.js`, or `.test.js`. Extensions will not be transformed.
+  * --case - The case to change to
+  * --ext - If you want to use an extension other than that detected by `path.extname` specify this. E.g. `.spec.js` or `.test.js`. Extensions are left untouched.
 
 ## As a library
 
