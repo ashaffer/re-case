@@ -12,11 +12,11 @@ var fs = require('fs')
  */
 
 test('should work', function (t) {
-  create('test')
+  create('test.js')
 
-  t.deepEqual(ls(), ['test'])
+  t.deepEqual(ls(), ['test.js'])
   recase('./test/fixtures/*', 'capital')
-  t.deepEqual(ls(), ['Test'])
+  t.deepEqual(ls(), ['Test.js'])
 
   cleanup()
 
