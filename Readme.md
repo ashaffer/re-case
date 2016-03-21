@@ -40,6 +40,16 @@ Internally this uses [to-case](https://github.com/ianstormtaylor/to-case), so yo
   * `title` - `What the Heck`
   * `upper` - `WHAT THE HECK`
 
+## As a library
+
+Using it as a library is just as simple:
+
+```
+var recase = require('re-case')
+
+recase('components/*.js', 'capital')
+```
+
 ## License
 
 The MIT License

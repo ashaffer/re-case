@@ -5,6 +5,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "main": "lib/index.js",
+  "bin": {
+    "recase": "bin/recase.js"
+  },
   "dependencies": {
     "glob": "^7.0.3",
     "to-case": "^2.0.0"
